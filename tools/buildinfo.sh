@@ -43,6 +43,8 @@ if [ "$TARGET_UNIFIED_DEVICE" == "" ] ; then
 fi
 echo "ro.build.characteristics=$TARGET_AAPT_CHARACTERISTICS"
 
+echo "# begin Xoplax customized properties"
 echo "ro.cm.device=$CM_DEVICE"
+echo "ro.xoplax.version=$PREVIEW_VERSION-$XOPLAX_BASE"
 
 echo "# end build properties"
